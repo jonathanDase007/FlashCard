@@ -1,12 +1,7 @@
-
-import Flashcard from "./flashcard/flashcard.js";
-import Button from "./flashcard/components/flashcardButton.js";
-import Wrapper from "./flashcard/components/Wrapper.js";
-import Box from "./flashcard/components/Box.js";
-
+import FlashBody from "./flashcard/components/Flashcard.js";
 
 const questions = [
-  ['Question a is right'],
+  ['servus'],
   ['Question b is right'],
   ['Question c is right'],
   ['Question d is right']
@@ -14,9 +9,16 @@ const questions = [
 
 const App = () => {
   return (
-    <Wrapper>
-      <Box>
-        {questions.flat().map((id) => {
+    <FlashBody 
+      value = {questions[0]}
+    /> 
+  );
+  };
+
+export default App;
+
+/*
+{questions.flat().map((id) => {
           console.log(id);
           return(
           <Button
@@ -26,11 +28,5 @@ const App = () => {
           />
         ) 
       })
-    }
-      </Box>
-      
-    </Wrapper>
-  );
-  };
-
-export default App;
+    }     
+*/
