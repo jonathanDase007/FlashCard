@@ -1,0 +1,29 @@
+.wrapper {
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+}
+
+.centered {
+    height: 100vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.wrapper:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+h1 {
+    color: rgb(0, 255, 221);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
